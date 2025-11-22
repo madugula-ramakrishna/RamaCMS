@@ -1,12 +1,13 @@
-# Write-up Template
+Analyze, choose, and justify the appropriate resource option for deploying the app.
+For this application I have chosen to use a Azure App Service. This is because :
 
-### Analyze, choose, and justify the appropriate resource option for deploying the app.
+This allows to be to quickly start with deploying the application without thinking about the infrastructure overhead. I do not need to maintain the OS or Python or configure the web server manually. From Github deployment operations is one click.
+I can use a consumption based pricing model which makes it cheaper maintain the app
+I can make a seamless connection to SQL database and blob storage, and configure the environment variables easily via portal.
+Assess app changes that would change your decision.
+I would look at using Azure VM instead of Azure App Service if I needed in the application to:
 
-*For **both** a VM or App Service solution for the CMS app:*
-- *Analyze costs, scalability, availability, and workflow*
-- *Choose the appropriate solution (VM or App Service) for deploying the app*
-- *Justify your choice*
-
-### Assess app changes that would change your decision.
-
-*Detail how the app and any other needs would have to change for you to change your decision in the last section.* 
+If there was a need to use/run this application in a private subnet or with VPN
+If there was a need to use a company active directory
+If there was a need to handle large incomming traffic
+If there was a need to use specialized control to use Docker/Kubernetes.
