@@ -26,8 +26,8 @@ def home():
     if ms_user:
         user_name = ms_user.get("name")
 
-   app.logger.info(f"User logged in: {user_name}")
-   return render_template(
+    app.logger.info(f"User logged in: {user_name}")
+    return render_template(
        'index.html',
        title='Home Page',
        posts=posts,
