@@ -11,3 +11,16 @@ If there was a need to use/run this application in a private subnet or with VPN
 If there was a need to use a company active directory
 If there was a need to handle large incomming traffic
 If there was a need to use specialized control to use Docker/Kubernetes.
+
+Below are the relative merits and demerits of considering WebApp service and VM service.
+
+Consideration	      Web App (PaaS)	    Virtual Machine (IaaS)
+OS Control	          ❌ No	              ✅ Full
+Scalability	          Easy, built-in	  Complex, manual
+Deployment	          Very simple	      Manual setup
+Security	            Managed	          Developer need to handle it
+Cost	                Lower	            Higher
+Flexibility	          Moderate	          Very high
+Best for	            Modern web apps	    Custom/legacy workloads
+
+
